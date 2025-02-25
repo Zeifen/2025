@@ -1,7 +1,9 @@
 import React from 'react';
 import { formatearFecha, formatearNumero, acortarTexto } from "../helpers/helpers";
 
-const basics = () => {
+//Componente funcional
+
+const Basic = () => {
     let fecha = new Date();
     let cantidad = 34343;
     let texto = 'Este es un texto de ejemplo para poder validar como se podría acortar el mismo';
@@ -95,5 +97,5 @@ const basics = () => {
     );
 };
 
-export default basics;
+export default Basic;
 
