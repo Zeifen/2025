@@ -4,14 +4,8 @@ import "./index.css";
 
 import ReactDOM from "react-dom/client"; //Se importó ReactDOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se importaron createBrowserRouterm, RouterProvider
-import Home from './pages/Home';
-import About from './pages/About';
-import Error404 from './pages/Error404'; //Rutas de los componentes de página
-import NewRoutes from "./pages/NewRoutes";
-import FrontLayout from "./components/FrontLayout";
-import PathRoutes from "./pages/PathRoutes";
-import RoutesQueryString from "./components/RoutesQueryString";
-
+import { Home, About, Error404, NewRoutes, PathRoutes } from "./pages";
+import { FrontLayout, RoutesQueryString } from "./components";
 const router = createBrowserRouter
 (
   [
