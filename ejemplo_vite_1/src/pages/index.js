@@ -3,3 +3,5 @@ export { default as About } from "./About";
 export { default as Error404 } from "./Error404";
 export { default as NewRoutes } from "./NewRoutes";
 export { default as PathRoutes } from "./PathRoutes";
+export { default as PersonalError } from "./PersonalError";
+

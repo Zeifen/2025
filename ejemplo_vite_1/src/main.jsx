@@ -1,10 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 import ReactDOM from "react-dom/client"; //Se importó ReactDOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se importaron createBrowserRouterm, RouterProvider
-import { Home, About, Error404, NewRoutes, PathRoutes } from "./pages";
+import { Home, About, Error404, NewRoutes, PathRoutes, PersonalError } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 const router = createBrowserRouter
 (
@@ -31,8 +32,13 @@ const router = createBrowserRouter
         },
         {
           path: '/routes/query-string',
-          element: <RoutesQueryString/>
+          element: <RoutesQueryString/>,
+          errorElement: <PersonalError />
         },
+        {
+          path: '*',
+          element: <Error404 />
+        }
       ]
     }
   ]

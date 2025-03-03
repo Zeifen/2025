@@ -3,7 +3,7 @@ import {useLocation} from 'react-router-dom';
 const RoutesQueryString = () => {
     const search = useLocation().search;
     let var1 = new URLSearchParams(search).get("var1");
-    const var2 = new URLSearchParams(search).get("var2");
+    //const var2 = new URLSearchParams(search).get("var2");
   return (
     <>
     <h1>Ejemplos parámetros path</h1>

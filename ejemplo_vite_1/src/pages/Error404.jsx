@@ -2,9 +2,10 @@
 const Error404 = () => {
   return (
     <>
-    <h1>Error404</h1>
+    <h1>Página no encontrada</h1>
+    <img  src="/error.png" />
     </>
   )
 }
 
-export default Error404
+export default Error404;
