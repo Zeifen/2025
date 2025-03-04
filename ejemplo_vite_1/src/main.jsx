@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import './../public/css/blog.css';
 
 import ReactDOM from "react-dom/client"; //Se importó ReactDOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se importaron createBrowserRouterm, RouterProvider

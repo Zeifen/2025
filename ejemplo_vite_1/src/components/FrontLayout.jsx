@@ -1,10 +1,15 @@
 import {Outlet} from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 
 const FrontLayout = () => {
   return (
     <>
-    <h1>Título para todas las páginas</h1>
-    <Outlet />
+      <Header />
+      <main className="container">
+      <Outlet />
+      </main>
+      <Footer />
     </>
   )
 }

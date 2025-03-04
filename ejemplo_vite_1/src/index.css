@@ -85,3 +85,8 @@
   color: #f0f8ff;
 }
 
+.reduced_image {
+  width: 40px;
+  height: auto;
+}
+
