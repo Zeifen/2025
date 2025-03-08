@@ -1,13 +1,17 @@
+
+
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import './../public/css/blog.css';
+import './blog.css';
 
 import ReactDOM from "react-dom/client"; //Se importó ReactDOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se importaron createBrowserRouterm, RouterProvider
-import { Home, About, Error404, NewRoutes, PathRoutes, PersonalError } from "./pages";
+import { Home, About, Error404, NewRoutes, PathRoutes, PersonalError, Hooks, HookClickEvent, HookUseState, HookOnChange,
+HookVariousEvents, HookUseEfect, HookCustom, HookUseNavigate, HookUseLocation, HookUseRef } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
+import HookUseLoaderData, {loader as paisesLoader} from "./pages/HookUseLoaderData";
 const router = createBrowserRouter
 (
   [
@@ -39,7 +43,53 @@ const router = createBrowserRouter
         {
           path: '*',
           element: <Error404 />
-        }
+        },
+        { /* Hooks */},
+        {
+          path: '/hooks',
+          element: <Hooks/>,
+        },
+        {
+          path: '/hooks/evento/click',
+          element: <HookClickEvent/>,
+        },
+        {
+          path: '/hooks/useState',
+          element: <HookUseState/>,
+        },
+        {
+          path: '/hooks/onChage',
+          element: <HookOnChange/>,
+        },
+        {
+          path: '/hooks/variousEvents',
+          element: <HookVariousEvents/>,
+        },
+        {
+          path: '/hooks/useEfect',
+          element: <HookUseEfect/>,
+        },
+        {
+          path: '/hooks/customeHooks',
+          element: <HookCustom/>,
+        },
+        {
+          path: '/hooks/useLoaderData',
+          element: <HookUseLoaderData/>,
+          loader: paisesLoader
+        },
+        {
+          path: '/hooks/useNavigate',
+          element: <HookUseNavigate/>,
+        },
+        {
+          path: '/hooks/useLocation',
+          element: <HookUseLocation/>,
+        },
+        {
+          path: '/hooks/useRef',
+          element: <HookUseRef/>,
+        },
       ]
     }
   ]

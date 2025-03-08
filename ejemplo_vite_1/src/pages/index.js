@@ -4,4 +4,13 @@ export { default as Error404 } from "./Error404";
 export { default as NewRoutes } from "./NewRoutes";
 export { default as PathRoutes } from "./PathRoutes";
 export { default as PersonalError } from "./PersonalError";
-
+export { default as Hooks } from "./Hooks";
+export { default as HookClickEvent } from "./HookClickEvent";
+export { default as HookUseState } from "./HookUseState";
+export { default as HookOnChange } from "./HookOnChange";
+export { default as HookVariousEvents } from "./HookVariousEvents";
+export { default as HookUseEfect } from "./HookUseEfect";
+export { default as HookCustom } from "./HookCustom"; 
+export { default as HookUseNavigate } from "./HookUseNavigate"; 
+export { default as HookUseLocation } from "./HookUseLocation";
+export { default as HookUseRef } from "./HookUseRef";
