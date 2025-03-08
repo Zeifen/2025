@@ -11,7 +11,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se imp
 import { Home, About, Error404, NewRoutes, PathRoutes, PersonalError, Hooks, HookClickEvent, HookUseState, HookOnChange,
 HookVariousEvents, HookUseEfect, HookCustom, HookUseNavigate, HookUseLocation, HookUseRef } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
-import HookUseLoaderData, {loader as paisesLoader} from "./pages/HookUseLoaderData";
+import HookUseLoaderData, {loader as paisesLoader} from "./pages/hooks/HookUseLoaderData";
 const router = createBrowserRouter
 (
   [

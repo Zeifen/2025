@@ -1,5 +1,5 @@
 import {Link, useLoaderData} from 'react-router-dom';
-import { countrys } from '../data/data';
+import { countrys } from '../../data/data';
 
 export function loader () {
     const paises = [...countrys].sort((a, b) => b.name.localeCompare(a.name)); 

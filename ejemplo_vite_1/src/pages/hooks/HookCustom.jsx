@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import {useEffect, useState} from 'react';
-import { products, categorys } from '../data/data';
-import { useProductHook } from '../hooks/useProductHook';
+import { products, categorys } from '../../data/data';
+import { useProductHook } from '../../custom_hook/useProductHook';
 
 const HookCustom = () => {
     const [category, setCategory] = useState(0);
