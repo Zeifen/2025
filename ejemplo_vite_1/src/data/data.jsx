@@ -55,4 +55,34 @@ const countrys = [
     },
 ];
 
-export {products, categorys, countrys};
+const category_products = [
+    {
+        id:1,
+        nombre: 'abarrotes'
+    },
+    {
+        id:2,
+        nombre: 'Lácteos'
+    },
+    {
+        id:3,
+        nombre: 'Carnes'
+    },
+];
+
+const atributes = [
+    {
+        id:1,
+        nombre: 'Perecible'
+    },
+    {
+        id:2,
+        nombre: 'Armable'
+    },
+    {
+        id:3,
+        nombre: 'Multiuso'
+    },
+];
+
+export {products, categorys, countrys, category_products, atributes};

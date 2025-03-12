@@ -2,7 +2,7 @@
 const Home = () => {
   return (
     <>
-    <h1>Ejemplo React Router DOM en Home</h1>
+    <h1>React Router DOM en Home</h1>
     </>
   )
 }
