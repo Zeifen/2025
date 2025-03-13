@@ -6,6 +6,9 @@ export async function action({request}) {
     const formData = await request.formData(); // modo actual: ${formData.get('uno')}
     const datos = Object.fromEntries(formData); // modo clásico: ${datos.uno}
 
+    //Se estableció peligroso como false ya que en los form si un checkbox no está marcado siempre será null
+    const peligroso = formData.get('peligroso') || "false";
+
     //Recibiendo checkbox dinámico
     let array = [];
     let messageArray = "";
@@ -42,7 +45,7 @@ export async function action({request}) {
                 Tu precio es de: ${formData.get('precio')}.
                 Tu opción fue: ${formData.get('destacado')}.
                 Tu descripción fue: ${formData.get('descripcion')}
-                Es peligroso? ${formData.get('peligroso')}
+                Es peligroso? ${peligroso}
                 Atributos: ${messageArray}
                 `
                 ,

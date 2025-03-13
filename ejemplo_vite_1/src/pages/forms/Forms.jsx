@@ -12,7 +12,7 @@ const Forms = () => {
                 <Link to="/forms/useActionData">Formulario con useActionData</Link>
             </li>
             <li>
-                <Link to="/forms/basicForm">Formulario</Link>
+                <Link to="/forms/Formik">Formulario con Formik</Link>
             </li>
             <li>
                 <Link to="/forms/basicForm">Formulario</Link>

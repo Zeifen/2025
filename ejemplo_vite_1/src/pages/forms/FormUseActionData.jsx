@@ -2,8 +2,23 @@ import { useState } from 'react';
 import {Link, Form, useActionData} from 'react-router-dom';
 import { atributes, category_products } from '../../data/data';
 import Validate from '../../components/Validate';
+import Swal from 'sweetalert2';
 
 const FormUseActionData = () => {
+    //useState de asíncronia
+    const [ name, setName ] = useState('');
+    async function handleBlur(name) {
+        if (name == "Sebas"){
+            Swal.fire({
+                title: 'Oppsssss!',
+                text: `El nombre ingresado no es valido`,
+                icon: 'error',
+                });
+            setName('');
+        }
+    }
+
+
     //Establece true o null en caso de ser peligroso
     const [ danger, setDanger ] = useState(false);
     const handleDanger = () => {
@@ -12,7 +27,6 @@ const FormUseActionData = () => {
 
     //useActionData
     const errors = useActionData();
-    console.log(errors);
 
   return (
     <>
@@ -32,7 +46,8 @@ const FormUseActionData = () => {
         <Form method ='POST' noValidate>
         <div>
             <label htmlFor="nombre">Nombre</label>
-            <input type="text" id='nombre' className="form-control" name='nombre'/>
+            <input type="text" id='nombre' className="form-control" name='nombre' 
+            value={name} onChange={(e) => {setName(e.target.value)}} onBlur={(e) => {handleBlur(e.target.value)}}/>
             <label htmlFor="nombre">Apellido</label>
             <input type="text" id='apellido' className="form-control" name='apellido' />
             {/*Select*/}

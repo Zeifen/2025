@@ -25,7 +25,8 @@ import {
   HookUseRef,
   Forms,
   BasicForm,
-  FormUseActionData
+  FormUseActionData,
+  FormFormik 
 } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 import HookUseLoaderData, { loader as paisesLoader } from "./pages/hooks/HookUseLoaderData";
@@ -124,6 +125,10 @@ const router = createBrowserRouter([
         path: "/forms/useActionData",
         element: <FormUseActionData />,
         action: processForm
+      },
+      {
+        path: "/forms/Formik",
+        element: <FormFormik />,
       },
     ],
   },
