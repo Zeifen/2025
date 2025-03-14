@@ -13,6 +13,10 @@ export const generalConstants = {
      titleOk : "OK",
      titleMissing : "Te faltó un campo",
      textMissing : "Inserta el elemento faltante",
+     textMail: "Correo inválido",
+     textPassRequired: "Contraseña obligatoria",
+     textPass: "El correo es obligatorio",
+     textMailChar: "Debe tener 8 caracteres, mayúscula, minúscula, número y símbolo",
      emailRegex : /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
      passwordRegex : /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
   }

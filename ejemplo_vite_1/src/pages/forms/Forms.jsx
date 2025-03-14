@@ -15,7 +15,10 @@ const Forms = () => {
                 <Link to="/forms/Formik">Formulario con Formik</Link>
             </li>
             <li>
-                <Link to="/forms/basicForm">Formulario</Link>
+                <Link to="/forms/ReactHookForm">Formulario con React Hook Form</Link>
+            </li>
+            <li>
+                <Link to="/forms/ReactFinalForm">Formulario con React Final Form</Link>
             </li>
         </ul>
     </>

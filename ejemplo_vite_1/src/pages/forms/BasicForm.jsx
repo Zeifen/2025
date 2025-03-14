@@ -7,6 +7,7 @@ const BasicForm = () => {
     const [secondName, setSecondName] = useState('');
     const handleSubmit = (e) =>{
         e.preventDefault();
+        //Condicion para validar que este correcto , como contraseña o el mail
         Swal.fire({
             title: '¡Hola!',
             text: 'Tu nombre es: ' +name+ ' y tu apellido es: ' +secondName,

@@ -26,7 +26,9 @@ import {
   Forms,
   BasicForm,
   FormUseActionData,
-  FormFormik 
+  FormFormik,
+  ReactHookForm,
+  ReactFinalForm
 } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 import HookUseLoaderData, { loader as paisesLoader } from "./pages/hooks/HookUseLoaderData";
@@ -130,9 +132,24 @@ const router = createBrowserRouter([
         path: "/forms/Formik",
         element: <FormFormik />,
       },
+      {
+        path: "/forms/ReactHookForm",
+        element: <ReactHookForm />,
+      },
+      {
+        path: "/forms/ReactFinalForm",
+        element: <ReactFinalForm />, 
+      },
     ],
   },
-]);
+],
+{
+  future: { 
+    v7_relativeSplatPath: true, // Compatibilidad con v7 para rutas splat (*)
+    v7_startTransition: true    // Usar React.startTransition() en v7
+  }
+}
+);
 
 //Se creó la ruta con ReactDOM
 ReactDOM.createRoot(document.getElementById("root")).render(

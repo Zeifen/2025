@@ -9,16 +9,15 @@ const FormFormik = () => {
     const {handleSubmit, handleChange, values} = useFormik({
         initialValues:{
             mail: "",
-            pass:""
+            password:""
         },
         onSubmit: async function (values) {
-            const validate = formConstants.validate;
-            if (values.mail === validate && values.pass === validate){
+            if (!values.mail && !values.password){ // Si Values.mail es vacío o values.pass es vacío (values.mail es true si tiene algo por eso se pone !, para validar si es false)
                 alertFunction( formConstants.text, formConstants.icon, formConstants.titleAtention );
-            } else if ((values.mail === validate && values.pass != validate) || (values.pass === validate && values.mail != validate) ) {
+            } else if ((!values.mail && values.password) || (!values.password && values.mail) ) {
                 alertFunction( formConstants.textMissing, formConstants.icon, formConstants.titleMissing );
             } else {
-                const textLoggin = `E-Mail: ${values.mail} | Contraseña: ${values.pass}`;
+                const textLoggin = `E-Mail: ${values.mail} | Contraseña: ${values.password}`;
                 alertFunction( textLoggin, formConstants.iconSuccess, formConstants.titleOk );
             }
         }
@@ -45,7 +44,7 @@ const FormFormik = () => {
             </div>
             <div className='form-control'>
                 <label htmlFor="password">Password</label>
-                <input type="password" id='pass' name='pass' className='form-control' onChange={handleChange} value={values.pass}/>
+                <input type="password" id='password' name='password' className='form-control' onChange={handleChange} value={values.password}/>
             </div>
             <div className="form-control">
                 <button className='btn btn-info' type='submit'>Enviar <i className="fa-solid fa-paper-plane"></i></button>
