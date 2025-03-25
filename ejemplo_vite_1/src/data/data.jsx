@@ -1,3 +1,4 @@
+
 const categorys = [
     {
         id: 1,
@@ -85,4 +86,25 @@ const atributes = [
     },
 ];
 
-export {products, categorys, countrys, category_products, atributes};
+const images = [{
+    id: 1,
+    titulo: "Cer1",
+    nombre: './../cer1.jpg',
+    caption: 'Scrum',
+},
+{
+    id: 2,
+    titulo: "Cer2",
+    nombre: '../../cer2.jpg',
+    caption: 'Net4Skills',
+},
+{
+    id: 3,
+    titulo: "Cer3",
+    nombre: '../../cer3.jpg',
+    caption: 'SQL y MySQL',
+}
+];
+
+export {products, categorys, countrys, category_products, atributes, images};
+

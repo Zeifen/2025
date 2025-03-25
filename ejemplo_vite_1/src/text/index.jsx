@@ -19,4 +19,4 @@ export const generalConstants = {
      textMailChar: "Debe tener 8 caracteres, mayúscula, minúscula, número y símbolo",
      emailRegex : /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
      passwordRegex : /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
-  }
+  };

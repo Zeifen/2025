@@ -28,7 +28,18 @@ import {
   FormUseActionData,
   FormFormik,
   ReactHookForm,
-  ReactFinalForm
+  ReactFinalForm,
+  Utils,
+  UtilsDaysJS,
+  MomentJS,
+  UtilsSpinner,
+  UtilsSwipeable,
+  UtilsWebcam,
+  UtilsCharts,
+  UtilsMaps,
+  UtilsClassicMaps,
+  UtilsModal,
+  UtilsCarousel
 } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 import HookUseLoaderData, { loader as paisesLoader } from "./pages/hooks/HookUseLoaderData";
@@ -139,6 +150,51 @@ const router = createBrowserRouter([
       {
         path: "/forms/ReactFinalForm",
         element: <ReactFinalForm />, 
+      },
+      { /* Utils */},
+      {
+        path: "/utils",
+        element: <Utils />, 
+      },
+      {
+        path: "/utils/UtilsDaysJS",
+        element: <UtilsDaysJS />, 
+      },
+      {
+        path: "/utils/MomentJS",
+        element: <MomentJS />, 
+      },
+      {
+        path: "/utils/UtilsSpinner", 
+        element: <UtilsSpinner />, 
+      },
+      {
+        path: "/utils/UtilsSwipeable", 
+        element: <UtilsSwipeable />, 
+      },
+      {
+        path: "/utils/UtilsWebcam", 
+        element: <UtilsWebcam />, 
+      },
+      {
+        path: "/utils/UtilsCharts", 
+        element: <UtilsCharts />, 
+      },
+      {
+        path: "utils/UtilsClassicMaps", 
+        element: <UtilsClassicMaps />,
+      },
+      {
+        path: "/utils/UtilsMaps", 
+        element: <UtilsMaps />,
+      },
+      {
+        path: "/utils/UtilsModal", 
+        element: <UtilsModal />, 
+      },
+      {
+        path: "/utils/UtilsCarousel", 
+        element: <UtilsCarousel />,
       },
     ],
   },

@@ -42,6 +42,9 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/hooks" title="Hooks">
               Hooks
             </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/utils" title="Hooks">
+              Utilidades
+            </Link>
           </nav>
         </div>
       </div>

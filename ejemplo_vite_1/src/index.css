@@ -90,3 +90,20 @@
   height: auto;
 }
 
+.chart_min{
+  width: 400px;
+  height: 400px;
+}
+
+.chart-align{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.background-carousel{
+  color: #712cf9;
+  background-color: #f0f8ff;
+  border: 2px solid rgb(4, 4, 5);
+
+}
