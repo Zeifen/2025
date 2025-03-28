@@ -42,8 +42,11 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/hooks" title="Hooks">
               Hooks
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/utils" title="Hooks">
+            <Link className="nav-item nav-link link-body-emphasis" to="/utils" title="Util">
               Utilidades
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/material" title="Material">
+              Material UI
             </Link>
           </nav>
         </div>

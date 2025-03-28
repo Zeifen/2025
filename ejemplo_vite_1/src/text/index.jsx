@@ -18,5 +18,20 @@ export const generalConstants = {
      textPass: "El correo es obligatorio",
      textMailChar: "Debe tener 8 caracteres, mayúscula, minúscula, número y símbolo",
      emailRegex : /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-     passwordRegex : /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+     passwordRegex : /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+  };
+
+  export const matConstants = {
+     matLink:'/material',
+     matTitle:'Material',
+     matListDescription:'Material List',
+     matDrawerDescription:'Material Drawer',
+     matTablesDescription: 'Material Tables - Data Grid',
+     matAccordionDescription: 'Material Accordion',
+     matStepperDescription: 'Material Stepper',
+     matTabsDescription: 'Material Tabs',
+     matDialogDescription: 'Material Dialog',
+     matCardDescription: 'Material Card',
+     matAutoDescription: 'Material Autocomplete',
+     matDateDescription: 'Material Autocomplete',
   };
