@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MenuConstants } from '../text';
 
 const Header = () => {
   return (
@@ -27,26 +28,29 @@ const Header = () => {
 
         <div className="nav-scroller py-1 mb-3 border-bottom">
           <nav className="nav nav-underline justify-content-between">
-            <Link className="nav-item nav-link link-body-emphasis" to="/" title="Home">
-              Home
+            <Link className="nav-item nav-link link-body-emphasis" to="/" title={MenuConstants.home}>
+              {MenuConstants.home}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/forms" title="Formularios">
-              Formularios
+            <Link className="nav-item nav-link link-body-emphasis" to="/forms" title={MenuConstants.form}>
+              {MenuConstants.form}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/routes" title="Routes">
-              Rutas
+            <Link className="nav-item nav-link link-body-emphasis" to="/routes" title={MenuConstants.routes}>
+              {MenuConstants.routes}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/about" title="About">
-              Acerca de...
+            <Link className="nav-item nav-link link-body-emphasis" to="/about" title={MenuConstants.about}>
+              {MenuConstants.about}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/hooks" title="Hooks">
-              Hooks
+            <Link className="nav-item nav-link link-body-emphasis" to="/hooks" title={MenuConstants.hook}>
+              {MenuConstants.hook}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/utils" title="Util">
-              Utilidades
+            <Link className="nav-item nav-link link-body-emphasis" to="/utils" title={MenuConstants.utility}>
+              {MenuConstants.utility}
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/material" title="Material">
-              Material UI
+            <Link className="nav-item nav-link link-body-emphasis" to="/material" title={MenuConstants.material}>
+              {MenuConstants.material}
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/storage" title={MenuConstants.storage}>
+              {MenuConstants.storage}
             </Link>
           </nav>
         </div>

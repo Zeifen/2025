@@ -35,6 +35,9 @@ const Hooks = () => {
             <li>
                 <Link to="/hooks/useRef">Evento useRef</Link>
             </li>
+            <li>
+                <Link to="/hooks/useContext">Evento Context</Link>
+            </li>
         </ul>
     </>
   )

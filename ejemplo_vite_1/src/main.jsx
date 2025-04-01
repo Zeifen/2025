@@ -52,6 +52,10 @@ import {
   MaterialCard,
   MaterialAutocomplete,
   MaterialDatePicker,
+  Storage,
+  LocalStorage,
+  SessionStorage,
+  ContextExample,
 } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 import HookUseLoaderData, {
@@ -90,9 +94,7 @@ const router = createBrowserRouter(
           path: "*",
           element: <Error404 />,
         },
-        {
-          /* Hooks */
-        },
+        {/* Hooks */},
         {
           path: "/hooks",
           element: <Hooks />,
@@ -139,8 +141,10 @@ const router = createBrowserRouter(
           element: <HookUseRef />,
         },
         {
-          /* Forms */
+          path: "/hooks/useContext",
+          element: <ContextExample />,
         },
+        {/* Forms */},
         {
           path: "/forms",
           element: <Forms />,
@@ -166,9 +170,7 @@ const router = createBrowserRouter(
           path: "/forms/ReactFinalForm",
           element: <ReactFinalForm />,
         },
-        {
-          /* Utils */
-        },
+        {/* Utils */},
         {
           path: "/utils",
           element: <Utils />,
@@ -213,9 +215,7 @@ const router = createBrowserRouter(
           path: "/utils/UtilsCarousel",
           element: <UtilsCarousel />,
         },
-        {
-          /* Material */
-        },
+        {/* Material */},
         {
           path: "/material",
           element: <Material />,
@@ -263,6 +263,19 @@ const router = createBrowserRouter(
         {
           path: "/material/MaterialDatePicker",
           element: <MaterialDatePicker/>,
+        },
+        {/* Material */},
+        {
+          path: "/storage",
+          element: <Storage/>,
+        },
+        {
+          path: "/storage/LocalStorage",
+          element: <LocalStorage/>,
+        },
+        {
+          path: "/storage/SessionStorage",
+          element: <SessionStorage/>,
         },
       ],
     },
