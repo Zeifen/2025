@@ -11,6 +11,7 @@ export const MenuConstants = {
    utility: 'Utilidades',
    material: 'Material UI',
    storage: 'Almacenamiento',
+   redux: 'Redux',
 };
 
 export const formConstants = {
@@ -58,4 +59,12 @@ export const storageConstants = {
   storageTitle: "Almacenamiento",
   storageLocalDesc: "Local Storage",
   storageSessionDesc: "Session Storage",
+};
+
+export const reduxConstants = {
+  reduxLink: '/redux',
+  reduxTitle: 'Redux',
+  reduxButtonDesc: 'Slice de botones',
+  reduxCalculatorDesc: 'Slice de Calculadora',
+  reduxParameterDesc: 'Slice de parámetros JSON',
 };

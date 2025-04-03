@@ -52,6 +52,9 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/storage" title={MenuConstants.storage}>
               {MenuConstants.storage}
             </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/redux" title={MenuConstants.storage}>
+              {MenuConstants.redux}
+            </Link>
           </nav>
         </div>
       </div>

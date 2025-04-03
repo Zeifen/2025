@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import "./blog.css";
+import { store } from "./pages/redux/store/store";
+import { Provider } from "react-redux";
 
 import ReactDOM from "react-dom/client"; //Se importó ReactDOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //Se importaron createBrowserRouterm, RouterProvider
@@ -56,6 +58,10 @@ import {
   LocalStorage,
   SessionStorage,
   ContextExample,
+  ReduxButtons,
+  Redux,
+  ReduxCalculator,
+  ReduxParameters,
 } from "./pages";
 import { FrontLayout, RoutesQueryString } from "./components";
 import HookUseLoaderData, {
@@ -277,6 +283,23 @@ const router = createBrowserRouter(
           path: "/storage/SessionStorage",
           element: <SessionStorage/>,
         },
+        {/* Redux */},
+        {
+          path: "/redux",
+          element: <Redux/>,
+        },
+        {
+          path: "/redux/ReduxButtons",
+          element: <ReduxButtons/>,
+        },
+        {
+          path: "/redux/ReduxCalculator",
+          element: <ReduxCalculator/>,
+        },
+        {
+          path: "/redux/ReduxParameters",
+          element: <ReduxParameters/>,
+        },
       ],
     },
   ],
@@ -291,6 +314,8 @@ const router = createBrowserRouter(
 //Se creó la ruta con ReactDOM
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <Provider store={store}>
+      <RouterProvider router={router}></RouterProvider>
+    </Provider>
   </StrictMode>
 );
