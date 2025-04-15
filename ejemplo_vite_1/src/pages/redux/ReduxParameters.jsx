@@ -4,8 +4,10 @@ import { useEffect, useState } from "react"; // Para el dispatch
 import { useSelector, useDispatch } from 'react-redux';
 import { logIn } from './features/parametersSlice';
 
-
 const ReduxParameters = () => {
+
+  //API de .env
+  const url = import.meta.env.VITE_LOCAL_API_UL;
 
   const parameters = useSelector((state)=>state.parameters);
   const dispatch = useDispatch();
@@ -13,7 +15,7 @@ const ReduxParameters = () => {
   const [mensaje, setMensaje] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/saludo')
+    fetch(url)
       .then(res => res.json())
       .then(data => {
         setMensaje(data.mensaje);
